@@ -17,8 +17,16 @@ html, body{
     background-attachment: fixed;
     background-position: center;
     min-height: 500px;
-    background-color: #086972;
-    
+    background-color: #086972;   
+}
+
+#feature2 {
+    background-image: url("../images/plantIcons2.png");
+    background-size: contain cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 200px;
+    background-color: whitesmoke;
 }
 
 .navbar {
@@ -63,3 +71,9 @@ html, body{
     padding-top: 7rem;
     padding-bottom: 2rem;
 }
+
+.btn-learn {
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+}
+
