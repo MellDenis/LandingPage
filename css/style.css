@@ -36,6 +36,16 @@ nav h4 {
     background-color: whitesmoke;
 }
 
+#feature3 {
+    background-size: contain cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-height: 300px;
+    background-image: url("../images/cactusContact.jpg");
+}
+
+
+
 .navbar {
     padding: 20px;
 }
