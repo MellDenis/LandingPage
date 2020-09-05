@@ -8,17 +8,14 @@ html, body{
     color: #303a52;
 }
 
+nav h4 {
+    font-family: 'Anton';
+    font-size: 50px;
+}
+
 #cardImage {
     padding: 10%;
     border-radius: 5px;
-    box-shadow: 0 2px 1.6px rgba(0, 0, 0, 0.01),
-    0 4.5px 3.6px rgba(0, 0, 0, 0.014),
-    0 7.9px 6.3px rgba(0, 0, 0, 0.017),
-    0 12.5px 10px rgba(0, 0, 0, 0.02),
-    0 19.3px 15.5px rgba(0, 0, 0, 0.023),
-    0 30.1px 24.1px rgba(0, 0, 0, 0.026),
-    0 50px 40px rgba(0, 0, 0, 0.03),
-    0 100px 80px rgba(0, 0, 0, 0.04);
 }
 
 #feature {
@@ -92,4 +89,24 @@ html, body{
     padding-top: 1rem;
     padding-bottom: 2rem;
 }
+
+.shadowsBox {
+    box-shadow: 0 2px 1.6px rgba(0, 0, 0, 0.01),
+    0 4.5px 3.6px rgba(0, 0, 0, 0.014),
+    0 7.9px 6.3px rgba(0, 0, 0, 0.017),
+    0 12.5px 10px rgba(0, 0, 0, 0.02),
+    0 19.3px 15.5px rgba(0, 0, 0, 0.023),
+    0 30.1px 24.1px rgba(0, 0, 0, 0.026),
+    0 50px 40px rgba(0, 0, 0, 0.03),
+    0 100px 80px rgba(0, 0, 0, 0.04);
+}
+
+.paddingText {
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+
+
+
 
