@@ -1,3 +1,4 @@
+
 (function () {
     'use strict';
     window.addEventListener('load', function () {
@@ -22,8 +23,40 @@
 
         });
 
-    }, false);
-    
-    
+    }, false); 
 
-})()
+})();
+
+function playGame() {
+    var attempts = 3;
+    var success = false;
+    var numSucces = 18;
+    var numplayer;
+
+    var name = document.getElementById("txtGamePlayer").value;
+    alert("Try to remember how many species of Graptopetalum there is ");
+
+    if (name == "") {
+        alert("Please enter a name to play :)");
+    } else {
+        while (attempts > 0 && success != true) {
+            attempts--;
+            numplayer = parseInt(prompt("Enter a number"));
+            if (numplayer == numSucces) {
+                alert("You got it!  " + name );
+                success = true;
+            } else if (numplayer < numSucces) {
+                alert("Clues: it is higher \n  You have " + attempts + " attemps left");
+            } else if (numplayer > numSucces) {
+                alert("Clues: it is lower \n  You have " + attempts + " attemps left");
+            } else {
+                alert("Ohh! :( Maybe next time " + name);
+            }
+
+
+        }
+        
+    }
+
+}
+
