@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,6 +8,7 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
     <nav class="navbar navbar-expand-md navbar-light bg-light sticky-top">
         <div class="container-fluid">
@@ -40,33 +42,45 @@
 
     <section>
         <div class="container container-fluid padding">
-            <form class="form_container" >
+            <form class="needs-validation" novalidate>
                 <div class="form-group">
                     <label for="txtName">Name </label>
-                    <input type="text" class="form-control" placeholder="Enter name" id="txtName"
-                        pattern="[a-zA-ZáéíóúÁÉÍÓÚ]+" minlength="4" maxlength="40" required>
-                    <div class="valid-feedback">ok</div>
-                    <div class="invalid-feedback">Dato obligatorio</div>
+                    <input type="text" class="form-control" placeholder="Enter name" id="txtName" pattern="[a-zA-ZáéíóúÁÉÍÓÚ]+" minlength="4" maxlength="40" required>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Please fill this field</div>
                 </div>
                 <div class="form-group">
                     <label for="txtLastname">Last name </label>
-                    <input type="text" class="form-control" placeholder="Enter Last name" id="txtLastname"
-                        pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+" minlength="4" maxlength="40" required>
+                    <input type="text" class="form-control" placeholder="Enter Last name" id="txtLastname" pattern="[a-zA-ZáéíóúÁÉÍÓÚ ]+" minlength="4" maxlength="40" required>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Please fill this field</div>
                 </div>
                 <div class="form-group">
                     <label for="txtEmail">Email address </label>
-                    <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp"
-                        placeholder="Enter email" required>
+                    <input type="email" class="form-control" id="txtEmail" aria-describedby="emailHelp" placeholder="Example@email.com" required>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Please fill this field</div>
                 </div>
                 <div class="form-group">
-                    <label for="txtSubject">Subject</label>
+                    <label for="txtSubject">Subject </label>
                     <input type="text" class="form-control" placeholder="Subject" id="txtSubject">
                 </div>
                 <div class="form-group">
-                    <label for="txtMessage">Message *</label>
+                    <label for="txtMessage">Message </label>
                     <textarea class="form-control" id="txtMessage" rows="3" placeholder="Message us!.." required></textarea>
+                    <div class="valid-feedback">Ok!</div>
+                    <div class="invalid-feedback">Please fill this field</div>
                 </div>
+
                 <button type="submit" class="btn btn-outline-info">Submit</button>
+
+                <div class="container-fluid padding"> 
+                    <div class="alert alert-info alert-dismissible fade show">
+                        <button type="button" class="close" data-dismiss="alert">&times;</button>
+                         Your email has been sent :) !
+                    </div>
+                </div>
+          
             </form>
         </div>
     </section>
@@ -77,4 +91,5 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
+
 </html>
