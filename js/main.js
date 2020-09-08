@@ -34,7 +34,7 @@ function playGame() {
     var numplayer;
 
     var name = document.getElementById("txtGamePlayer").value;
-    alert("Try to remember how many species of Graptopetalum there is ");
+    alert("Try to remember how many species of Graptopetalum there are ");
 
     if (name == "") {
         alert("Please enter a name to play :)");
@@ -50,7 +50,7 @@ function playGame() {
             } else if (numplayer > numSucces) {
                 alert("Clues: it is lower \n  You have " + attempts + " attemps left");
             } else {
-                alert("Ohh! :( Maybe next time " + name);
+                alert("Ohh! :( Maybe next time " );
             }
 
 
