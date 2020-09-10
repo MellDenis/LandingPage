@@ -72,16 +72,9 @@
                     <div class="invalid-feedback">Please fill this field</div>
                 </div>
 
-                <button type="submit" class="btn btn-outline-info">Submit</button>
-
-                <div class="container-fluid padding"> 
-                    <div class="alert alert-info alert-dismissible fade show">
-                        <button type="button" class="close" data-dismiss="alert">&times;</button>
-                         Your email has been sent :) !
-                    </div>
-                </div>
-          
+                <button type="submit" class="btn btn-outline-info" id="submit" onclick="createAlert()">Submit</button>
             </form>
+            <div class="container-fluid padding" id="divAlert"></div>
         </div>
     </section>
 
